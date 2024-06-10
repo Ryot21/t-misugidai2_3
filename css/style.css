@@ -3780,7 +3780,7 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-footer__misugiArea {
-    width: 87.5%;
+    width: 85%;
     margin-right: 0;
     margin-left: auto;
   }
@@ -5119,6 +5119,14 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-flex.-h-c_pc {
     align-items: center;
+  }
+}
+.c-flex.-h-b {
+  align-items: flex-end;
+}
+@media (width >= 768px) {
+  .c-flex.-h-b_pc {
+    align-items: flex-end;
   }
 }
 .c-flex.-r {
