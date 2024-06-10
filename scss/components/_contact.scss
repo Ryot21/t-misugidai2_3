@@ -1,0 +1,59 @@
+.contactItem{
+	// position: relative;
+	&_main{
+		// position: absolute;
+		// top: 40%;
+		// left: 50%;
+		// transform: translate(-50%, -50%);
+		// white-space: nowrap;
+		// @include min(768){
+		// 	top: 45%;
+		// }
+	}
+	&_sub{
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		white-space: nowrap;
+		@include min(768){
+			top: 65%;
+		}
+	}
+	&_sub02{
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		white-space: nowrap;
+		@include min(768){
+			top: 72%;
+		}
+		@include min(1400){
+			top: 65%;
+		}
+	}
+}
+
+
+.c-f-contact{
+	li{
+		&:nth-child(1){
+			position: relative;
+			&::after{
+				content: "";
+				position: absolute;
+				top: 60%;
+				right: -5%;
+				transform: translateY(-50%);
+				width: 1px;
+				height: 100%;
+				background: $main-color--w;
+			}
+		}
+	}
+	a{
+		position: relative;
+		display: block;
+	}
+}
