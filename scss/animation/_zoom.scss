@@ -58,11 +58,9 @@
 .a-fviewInImg{
     overflow: hidden;
     transition: 4s all;
-    img{
+    .imgBox{
         animation-name: ZoomIn;
         animation-fill-mode:forwards;
-        animation-duration:1s;
-        transform: scale(1.01);
     }
 }
 @keyframes ZoomIn{

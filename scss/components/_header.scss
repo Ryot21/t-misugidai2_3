@@ -6,7 +6,7 @@
 .c-header{
 	width: 100vw;
 	height: auto;
-	background: $main-color--w;
+	// background: $main-color--w;
 	// padding: 5px 0px 10px;
 	box-sizing: border-box;
 	transition: padding .3s;
@@ -26,7 +26,7 @@
 		height: auto;
 		padding: 8px 0px 10px;
 		margin: auto;
-		// background: #bfbebe2e;
+		z-index: 10;
 		@include min(768){
 			width: 90%;
 			max-width: 1100px;
@@ -36,14 +36,16 @@
 			width: 70.4%;
 		}
 		&::after{
-			content: "";
-			position: absolute;
-			left: 50%;
-			bottom: 0;
-			transform: translateX(-50%);
-			width: 100vw;
-			height: 1px;
-			background: $main-color--b;
+			@include min(768){
+				content: "";
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				transform: translateX(-50%);
+				width: 100vw;
+				height: 1px;
+				background: $main-color--b;
+			}
 		}
 		// ボーダーなし
 		&.-no-b{
@@ -78,7 +80,7 @@
 				// 	// height: auto;
 				// 	background: rgb(224, 112, 112);
 				// }
-				&.c-header__contactArea{
+x				&.c-header__contactArea{
 					@include max(768){
 						display: none;
 					}
@@ -391,10 +393,20 @@
 			}
 			.c-header__item{
 				&:nth-child(1){
-					width: calc(12.5% - 60px);
-					margin-left: 60px;
-					@include max(1200){
-						max-width: 40px;
+					width: 8%;
+					margin-left: 28px;
+					@include max(768){
+						position: relative;
+						&::before{
+							content: "";
+							position: absolute;
+							top: -5%;
+							left: -55%;
+							width: 160%;
+							height: 110%;
+							background: #9e9e9e;
+							z-index: 0;
+						}
 					}
 					@include min(1200){
 						width: calc(10% - 60px);
@@ -402,7 +414,6 @@
 					}
 				}
 				&:nth-child(2){
-					width: 87.5%;
 					@include min(1200){
 						width: 90%;
 					}

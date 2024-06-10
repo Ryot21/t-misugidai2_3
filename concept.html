@@ -54,8 +54,8 @@
 		<label id="" class="c-hnav__cheakbox c-hnav__close" for="c-hnav__checkbox"></label>
 		<div class="c-hnav__content">
 			<ul class="">
-				<li class=""><a class="s-SS -ws-n -ls-2 -left -active"  href="index.html"><span class="s-M pdr5 pdr4s">TOP</span>トップ</a></li>
-				<li class=""><a class="s-SS -ws-n -ls-2 -left"  href="concept.html"><span class="s-M pdr5 pdr4s"      >CONCEPT</span>コンセプト</a></li>
+				<li class=""><a class="s-SS -ws-n -ls-2 -left"  href="index.html"><span class="s-M pdr5 pdr4s">TOP</span>トップ</a></li>
+				<li class=""><a class="s-SS -ws-n -ls-2 -left -active"  href="concept.html"><span class="s-M pdr5 pdr4s"      >CONCEPT</span>コンセプト</a></li>
                 <li class=""><a class="s-SS -ws-n -ls-2 -left"  href="layout.html"><span class="s-M pdr5 pdr4s"       >LAYOUT</span>区画</a></li>
                 <li class=""><a class="s-SS -ws-n -ls-2 -left"  href="plan.html"><span class="s-M pdr5 pdr4s"         >PLAN</span>プラン</a></li>
                 <li class=""><a class="s-SS -ws-n -ls-2 -left"  href="location.html"><span class="s-M pdr5 pdr4s"     >LOCATION</span>周辺環境</a></li>
@@ -83,10 +83,10 @@
 	</nav>
 
     <!-- header / TOPと各ページの構造が異なる -->
-    <header id="header" class="tb-pc c-header pdt1">
+    <header id="header" class=" c-header pdt1">
         <div class="c-header-wrapper pdb1"><!-- バナー表示エリア -->
             <div class="c-header__misugidai">
-                <div class="contactArea">
+                <div class="tb-pc contactArea">
                     <ul class="c-flex -col2_2__in">
                         <li><p class="-right"><a href="" class="s-S -ws-n -ls-2">資料請求</a></p></li>
                         <li><p class="-right"><a href="" class="s-S -ws-n -ls-2">見学予約</a></p></li>
@@ -105,7 +105,7 @@
                         </a>
                     </li>
                     <!-- お問い合わせ・リード文・ナビゲーション -->
-                    <li class="c-header__item pdl5">
+                    <li class="tb-pc c-header__item pdl5">
                         <div class="readArea mgb5 mgb5s">
                             <ul class="c-flex -col3 -h-c">
                                 <li><p class="s-S -center -ws-n  -ls-10">山と街の境、</p></li>
@@ -115,7 +115,7 @@
                         </div>
                         <nav class="navArea c-headerNav">
                             <ul class="c-flex -col6">
-                                <li><a class="s-S -center -ls-2" href="concept.html">コンセプト<br><p class="s-SS -center -f-En03">CONCEPT</p></a></li>
+                                <li><a class="s-S -center -ls-2 -active" href="">コンセプト<br><p class="s-SS -center -f-En03">CONCEPT</p></a></li>
                                 <li><a class="s-S -center -ls-2" href="">区画<br><p class="     s-SS -center -f-En03">LAYOUT</p></a></li>
                                 <li><a class="s-S -center -ls-2" href="">プラン<br><p class="   s-SS -center -f-En03">PLAN</p></a></li>
                                 <li><a class="s-S -center -ls-2" href="">周辺環境<br><p class=" s-SS -center -f-En03">LOCATION</p></a></li>
@@ -132,89 +132,16 @@
     <!-- //header -->
 
     <!-- コンテンツ -->
-    <main class="c-container mgb2 mgb10s">
+    <main class="c-container mgb2 mgt-10s mgb10s">
         <!-- ファーストビュー -->
-        <div class="c-contents -f-slider -imgBg">
+        <div class="c-contents -f-view a-fviewInImg -sp1">
             <div class="imgBox">
-                <div class="swiper swiper-Fview">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><!-- 山岳部 -->
-                            <!-- TOP > Slider > -f-slider -->
-                            <div class="c-contents -f-slider -imgBg">
-                                <div class="imgBox zoomIn">
-                                    <img class="sp"    alt="山岳部の写真_カバー" src="images/f-view/f-view01cv_sp.png">
-                                    <img class="tb-pc" alt="山岳部の写真_カバー" src="images/f-view/f-view01cv_pc___v2.png">
-                                </div>
-                                <div class="c-contentsBox -f-bg_01 zoomOut">
-                                    <img class="sp"    alt="山岳部の写真_背景" src="images/f-view/f-view01bg_sp.png" alt="">
-                                    <img class="tb-pc" alt="山岳部の写真_背景" src="images/f-view/f-view01bg_pc___v2.png" alt="">
-                                </div>
-                                <div class="c-contentsBox -f-des_01 fadeLeft">
-                                    <p class="s-M -white -tate_s -lh-2 -ls-10 -right">都会の喧噪より少し離れて、<br>近くの木々の声を聞く暮らし。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide"><!-- 森林 -->
-                            <!-- TOP > Slider > -f-slider -->
-                            <div class="c-contents -f-slider -imgBg">
-                                <div class="imgBox zoomIn">
-                                    <img class="sp"    src="images/f-view/f-view02cv_sp.png">
-                                    <img class="tb-pc" src="images/f-view/f-view02cv_pc.png">
-                                </div>
-                                <div class="c-contentsBox -f-bg_02 zoomOut">
-                                    <img class="sp"    src="images/f-view/f-view02bg_sp.png" alt="">
-                                    <img class="tb-pc" src="images/f-view/f-view02bg_pc.png" alt="">
-                                </div>
-                                <div class="c-contentsBox -f-des_02 fadeLeft">
-                                    <p class="s-M -white -tate_s -lh-2 -ls-10 -right">木々と共に生きてきた飯能。<br>山と街の境に暮らしを成す。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide"><!-- 夜景 -->
-                            <!-- TOP > Slider > -f-slider -->
-                            <div class="c-contents -f-slider -imgBg">
-                                <div class="imgBox ">
-                                    <img class="sp"    src="images/f-view/f-view03cv_sp.png">
-                                    <img class="tb-pc" src="images/f-view/f-view03cv_pc.png">
-                                </div>
-                                <div class="c-contentsBox -f-bg_03 zoomOut">
-                                    <img class="sp"    src="images/f-view/f-view03bg_sp.png" alt="">
-                                    <img class="tb-pc" src="images/f-view/f-view03bg_pc.png" alt="">
-                                </div>
-                                <div class="c-contentsBox -f-des_03">
-                                    <p class="s-M -white -tate_s -lh-2 -ls-10 -right">東京と自然、<br class="sp">両方を眺められる街。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="swiper-pagination -type01"></div> -->
-                </div>
+                <img class="sp"    alt="_カバー" src="images/f-view/concept/concept-view01-01.png">
+                <img class="tb-pc" alt="_カバー" src="images/f-view/concept/concept-view01-01.png">
             </div>
-            <!-- 全スライダー共通 -->
-            <div class="sp c-contentsBox -f-title">
-                <div class="imgBox">
-                    <img src="images/SVG/site-logo_w.svg" alt="美杉台">
-                </div>
-            </div>
-            <div class="sp c-contentsBox -f-subTitle">
-                <p class="s-S -center -white -ws-n -ls-10 mgb5s">山と街の境、美しい地。</p>
-                <div class="imgBox w50s"><img src="images/SVG/site-grancia_w.svg" alt="グランシア"></div>
-            </div>
-            <div class="sp c-contentsBox -f-messageArea">
-                <ul class="messageLists c-flex -col3 -f-btm">
-                    <li><div class="imgBox"><img src="images/SVG/site-btm_01.svg" alt="全5区画土地面積60坪"></div></li>
-                    <li><div class="imgBox"><img src="images/SVG/site-btm_02.svg" alt="飯能美杉台2丁目3期 | 建築条件付き土地5棟"></div></li>
-                    <li><div class="imgBox"><img src="images/SVG/site-btm_03.svg" alt="西武池袋線飯能駅徒歩18分"></div></li>
-                </ul>
-            </div>
-            <div class="sp c-contentsBox -f-contactArea">
-                <div class="c-f-contact">
-                    <ul class="c-flex -col2_2">
-                        <li><a href="" class="s-S -center -white">資料請求</a></li>
-                        <li><a href="" class="s-S -center -white">見学予約</a></li>
-                    </ul>
-                </div>
-                
+            <div class="c-contentsBox zoomOut">
+                <img class="sp"    alt="背景" src="images/f-view/concept/concept-view01-bg.png">
+                <img class="tb-pc" alt="背景" src="images/f-view/concept/concept-view01-bg.png">
             </div>
         </div>
     </main>
@@ -247,7 +174,7 @@
                                     </li>
                                     <li class="c__item">
                                         <p class="-right">
-                                            <a href="https://www.jyu-g.co.jp/" class="s-S -s-nav -ls-2">住まい情報</a>
+                                            <a href="https://www.jyu-g.co.jp/" class="s-S - -s-nav -ls-2">住まい情報</a>
                                         </p>
                                     </li>
                                 </ul>
@@ -255,7 +182,7 @@
                             <div class="sp">
                                 <nav class="navArea c-footerNav">
                                     <ul class="c-flex -col6">
-                                        <li><a class="s-M -s10 -center" href="concept.html">コンセプト<br><p class="s-SS -f-En03">CONCEPT</p></a></li>
+                                        <li><a class="s-M -s10 -center -active" href="">コンセプト<br><p class="s-SS -f-En03">CONCEPT</p></a></li>
                                         <li><a class="s-M -s10 -center" href="">区画<br><p class="s-SS -f-En03"      >LAYOUT</p></a></li>
                                         <li><a class="s-M -s10 -center" href="">プラン<br><p class="s-SS -f-En03"    >PLAN</p></a></li>
                                         <li><a class="s-M -s10 -center" href="">周辺環境<br><p class="s-SS -f-En03"  >LOCATION</p></a></li>
@@ -280,25 +207,6 @@
     <!-- //footer -->
 
 
-    <script>
-        // トップページ > fristView
-        const FviewSwiper = new Swiper(".swiper-Fview", {
-            effect: 'fade',
-            fadeEffect: {crossFade: true,},
-            // loop: true,
-            speed: 2500,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-                waitForTransition: true,
-            },
-            grabCursor: true,
-            followFinger: false,
-            pagination: {
-                el: '.swiper-Fview .swiper-pagination',
-                clickable: true,
-            },
-        });
-    </script>
+
 </body>
 </html>

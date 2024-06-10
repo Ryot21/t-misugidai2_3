@@ -1200,6 +1200,12 @@ span.-block {
   }
 }
 
+@media (768px >= width) {
+  .mgt-10s {
+    margin-top: -10% !important;
+  }
+}
+
 /* ------------------------------------------------------------------------
 　　　padding 上幅
 		*アンカーリンクの表示調整用には「paddig-top」を使用すること。
@@ -2940,7 +2946,6 @@ button.swiper-pagination-bullet {
 .c-header {
   width: 100vw;
   height: auto;
-  background: #ffffff;
   box-sizing: border-box;
   transition: padding 0.3s;
 }
@@ -2962,6 +2967,7 @@ button.swiper-pagination-bullet {
   height: auto;
   padding: 8px 0px 10px;
   margin: auto;
+  z-index: 10;
 }
 @media (width >= 768px) {
   .c-header-wrapper {
@@ -2975,15 +2981,17 @@ button.swiper-pagination-bullet {
     width: 70.4%;
   }
 }
-.c-header-wrapper::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 100vw;
-  height: 1px;
-  background: #3b3b3b;
+@media (width >= 768px) {
+  .c-header-wrapper::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 1px;
+    background: #3b3b3b;
+  }
 }
 .c-header-wrapper.-no-b::after {
   background: #ffffff;
@@ -3013,12 +3021,12 @@ button.swiper-pagination-bullet {
   }
 }
 @media (768px >= width) {
-  .c-header__popArea .c-header__lists li.c-header__contactArea {
+  x .c-header__popArea .c-header__lists li.c-header__contactArea {
     display: none;
   }
 }
 @media (width >= 768px) {
-  .c-header__popArea .c-header__lists li.c-header__contactArea {
+  x .c-header__popArea .c-header__lists li.c-header__contactArea {
     display: grid;
     grid-template-rows: 2.5fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -3026,15 +3034,15 @@ button.swiper-pagination-bullet {
     width: 28%;
   }
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea .top-left {
+x .c-header__popArea .c-header__lists li.c-header__contactArea .top-left {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea .top-right {
+x .c-header__popArea .c-header__lists li.c-header__contactArea .top-right {
   grid-column: 2/3;
   grid-row: 1/2;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea .tag {
+x .c-header__popArea .c-header__lists li.c-header__contactArea .tag {
   position: relative;
   grid-column: 1/3;
   grid-row: 2/3;
@@ -3042,16 +3050,16 @@ button.swiper-pagination-bullet {
   height: 100%;
   background: #ffffff;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea .tag span {
+x .c-header__popArea .c-header__lists li.c-header__contactArea .tag span {
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer {
   position: relative;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer::before {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer::before {
   content: "";
   position: absolute;
   top: 38%;
@@ -3061,7 +3069,7 @@ button.swiper-pagination-bullet {
   width: 1px;
   background: #3b3b3b;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer::after {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer::after {
   content: "";
   position: absolute;
   top: 72%;
@@ -3071,61 +3079,61 @@ button.swiper-pagination-bullet {
   width: 98%;
   background: #3b3b3b;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer .top-left span {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer .top-left span {
   color: #3b3b3b;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer .top-left:hover span {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer .top-left:hover span {
   color: #3b3b3b !important;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer .top-right span {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer .top-right span {
   color: #3b3b3b;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer .top-right:hover span {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-borderVer .top-right:hover span {
   color: #3b3b3b !important;
 }
 @media (width >= 768px) {
-  .c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer {
+  x .c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer {
     grid-template-rows: 3.3fr 1fr;
   }
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer .top-left {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer .top-left {
   background: #96bbc7;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer .top-left span {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer .top-left span {
   color: #ffffff !important;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer .top-left:hover {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer .top-left:hover {
   opacity: 0.8;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer .top-right {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer .top-right {
   background: #5a8190;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer .top-right span {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer .top-right span {
   color: #ffffff !important;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer .top-right:hover {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-colorBoxVer .top-right:hover {
   opacity: 0.9;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer {
   background: url(../images/item/contact_bg.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 @media (width >= 768px) {
-  .c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer {
+  x .c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer {
     grid-template-rows: 3.3fr 1fr;
   }
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-left {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-left {
   position: relative;
   background: inherit;
   transition: all 0.5s;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-left span {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-left span {
   color: #3b3b3b !important;
   z-index: 2;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-left::after {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-left::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -3137,21 +3145,21 @@ button.swiper-pagination-bullet {
   z-index: 1;
   transition: all 0.5s;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-left:hover {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-left:hover {
   background: #ebebeb;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-left:hover::after {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-left:hover::after {
   width: 98%;
   height: 95%;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-right {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-right {
   position: relative;
   transition: all 0.5s;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-right span {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-right span {
   color: #ffffff !important;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-right::after {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-right::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -3163,7 +3171,7 @@ button.swiper-pagination-bullet {
   z-index: 1;
   transition: all 0.5s;
 }
-.c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-right:hover::after {
+x .c-header__popArea .c-header__lists li.c-header__contactArea.-bgImgVer .top-right:hover::after {
   width: 98%;
   height: 95%;
   background: rgba(255, 255, 255, 0.137);
@@ -3303,12 +3311,22 @@ button.swiper-pagination-bullet {
   }
 }
 .c-header__misugidai .c-header__lists .c-header__item:nth-child(1) {
-  width: calc(12.5% - 60px);
-  margin-left: 60px;
+  width: 8%;
+  margin-left: 28px;
 }
-@media (1200px >= width) {
+@media (768px >= width) {
   .c-header__misugidai .c-header__lists .c-header__item:nth-child(1) {
-    max-width: 40px;
+    position: relative;
+  }
+  .c-header__misugidai .c-header__lists .c-header__item:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -55%;
+    width: 160%;
+    height: 110%;
+    background: #9e9e9e;
+    z-index: 0;
   }
 }
 @media (width >= 1200px) {
@@ -3316,9 +3334,6 @@ button.swiper-pagination-bullet {
     width: calc(10% - 60px);
     margin-left: 60px;
   }
-}
-.c-header__misugidai .c-header__lists .c-header__item:nth-child(2) {
-  width: 87.5%;
 }
 @media (width >= 1200px) {
   .c-header__misugidai .c-header__lists .c-header__item:nth-child(2) {
@@ -4270,6 +4285,11 @@ button.swiper-pagination-bullet {
 .c-headerNav a:hover::after {
   background: #3b3b3b;
 }
+.c-headerNav a.-active::after {
+  width: 1px;
+  background: #3b3b3b;
+  filter: drop-shadow(1px 1px 3px #3b3b3b);
+}
 
 .c-footerNav a {
   position: relative;
@@ -4286,12 +4306,15 @@ button.swiper-pagination-bullet {
   left: 49%;
   transform: translateX(-50%);
   bottom: -20%;
-  width: 99%;
+  width: 50%;
   height: 1px;
   background: #ffffff;
   transition: all 1s;
 }
 .c-footerNav a:hover::after {
+  background: #3b3b3b;
+}
+.c-footerNav a.-active::after {
   background: #3b3b3b;
 }
 
@@ -7432,11 +7455,9 @@ a {
   overflow: hidden;
   transition: 4s all;
 }
-.a-fviewInImg img {
+.a-fviewInImg .imgBox {
   animation-name: ZoomIn;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
-  transform: scale(1.01);
 }
 
 @keyframes ZoomIn {
