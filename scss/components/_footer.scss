@@ -9,7 +9,7 @@
 	&-wrapper{
 		align-items: center;
 		width: 90%;
-        max-width: 1100px;
+        max-width: 1200px;
 		margin: auto;
 		height: auto;
 		// background: #bfbebe2e;
@@ -393,7 +393,7 @@
 	&__misugiArea{
 		width: 100%;
 		@include min(768){
-			width: 85%;
+			width: 81%;
 			margin-right: 0;
 			margin-left: auto;
 		}
@@ -414,7 +414,7 @@
 							content: "";
 							position: absolute;
 							top: 50%;
-							right: 0;
+							right: -8%;
 							transform: translateY(-50%);
 							width: 1px;
 							height: 100%;

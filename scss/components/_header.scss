@@ -29,11 +29,11 @@
 		z-index: 10;
 		@include min(768){
 			width: 90%;
-			max-width: 1100px;
+			max-width: 1200px;
 			padding: 0;
 		}
 		@include min(1600){
-			width: 70.4%;
+			width: 63%;
 		}
 		&::after{
 			@include min(768){
@@ -80,7 +80,7 @@
 				// 	// height: auto;
 				// 	background: rgb(224, 112, 112);
 				// }
-x				&.c-header__contactArea{
+				&.c-header__contactArea{
 					@include max(768){
 						display: none;
 					}
@@ -390,6 +390,7 @@ x				&.c-header__contactArea{
 			@include min(768){
 				display: flex;
 				flex-wrap: nowrap;
+				justify-content: space-between;
 			}
 			.c-header__item{
 				&:nth-child(1){
@@ -408,12 +409,21 @@ x				&.c-header__contactArea{
 							z-index: 0;
 						}
 					}
-					@include min(1200){
-						width: calc(10% - 60px);
+					@include min(768){
 						margin-left: 60px;
+						width: calc(13% - 60px);
+					}
+					@include min(850){
+						width: calc(11% - 60px);
+					}
+					@include min(1000){
+						width: calc(10% - 60px);
 					}
 				}
 				&:nth-child(2){
+					@include min(768){
+						width: 85%;
+					}
 					@include min(1200){
 						width: 90%;
 					}
@@ -461,7 +471,7 @@ x				&.c-header__contactArea{
 			}
 		}
 		.readArea{
-			width: 50%;
+			width: 55%;
 			li{
 				// p{height: 100%;}
 				img{width: auto;}

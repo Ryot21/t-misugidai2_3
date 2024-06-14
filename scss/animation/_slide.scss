@@ -7,6 +7,15 @@
         background-position: 0 bottom;
     }
 }
+@keyframes slideUpImg{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10%);
+    }
+}
+
 
 @keyframes slideDown{
     0% {
@@ -14,6 +23,14 @@
     }
     100% {
         background-position: 0 top;
+    }
+}
+@keyframes slideDownImg{
+    0% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
@@ -85,7 +102,8 @@
 .a-slideUpImg{
     overflow: hidden;
     transition: 4s all;
-    &::after{
+    &::after,
+    img{
         animation-name: slideUp;
         animation-fill-mode:forwards;
         animation-duration:5s;
@@ -98,8 +116,9 @@
 .a-slideDownImg{
     overflow: hidden;
     transition: 4s all;
-    &::after{
-        animation-name: slideDown;
+    &::after,
+    img{
+        animation-name: slideDownImg;
         animation-fill-mode:forwards;
         animation-duration:5s;
     }

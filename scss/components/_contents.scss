@@ -9,7 +9,8 @@
 		width: 90%;
 		margin: auto;
 		@include min(768){
-			width: 95%;
+			width: 56% !important;
+			max-width: 900px;
 		}
 	}
 
@@ -37,7 +38,7 @@
 					left: -20px;
 					letter-spacing: .5rem;
 					-ms-writing-mode: tb-rl;
-                	writing-mode: vertical-rl;
+					writing-mode: vertical-rl;
 				}
 				@include max(768){
 					top: 4%;
@@ -334,6 +335,26 @@
 				@include max(1200){
 					top: -8%;
 					transform: scale(.8);
+				}
+			}
+			// コンテンツ > 縦画像
+			&.-tatePic{
+				top: 85%;
+				left: 70%;
+				// transform: translateX(-50%);
+				width: 20%;
+				overflow: hidden;
+				z-index: 1;
+				@include min(768){
+					top: 70%;
+					left: 75%;
+					width: 15%;
+				}
+				&_bg{
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 100%;
 				}
 			}
 		}

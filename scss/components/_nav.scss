@@ -1,8 +1,8 @@
 // ナビゲーション
 .c-hnav{
 	position: sticky;
-	top: 3%;
-    left: 86%;
+	top: 3.5%;
+    left: 85%;
 	width: 33px;
 	height: 0;
 	// opacity: .7;
@@ -44,7 +44,7 @@
 			height: 2px;
 			width: 33px;
 			// border-radius: 3px;
-			background: $main-color--w;
+			background: $main-color--Dgray;
 			// filter: drop-shadow(0px 0px 1px $main-color--w);
 			cursor: pointer;
 			@include min(768){
@@ -119,43 +119,33 @@
 				span{transition: .5s all;}
 				&.-active{
 					position: relative;
-					color: $site-color03;
+					// color: $site-color03;
 					font-weight: bold;
-					pointer-events: none;
 					span{color: $site-color03;}
-					filter: drop-shadow(1px 1px 0px hsla(0, 0%, 0%, 0.322));
 					pointer-events: none;
 					&::after{
 						content: "";
 						position: absolute;
 						top: 50%;
-						left: -14px;
+						left: -5px;
 						transform: translateY(-50%);
-						width: 12px;
-						height: 12px;
-						background-image: url(../images/logo/page-title-icon.png);
-						background-size: contain;
-						background-repeat: no-repeat;
+						width: 1px;
+						height: 70%;
+						background: $main-color--Dgray;
 						@include min(768){
-							left: -12px;
-							width: 10px;
-							height: 10px;
-						}
-						@include min(1200){
-							top: 47%;
-							left: -17px;
-							width: 15px;
-							height: 15px;
-						}
-						@include min(1400){
-							width: 13px;
-							height: 13px;
+							left: -5px;
+							width: 1px;
+							height: 80%;
 						}
 					}
 				}
 			}
 			label{color: $main-color--b;}
-			&:hover{a, label,span{color: $site-color01;}}
+			&:hover{
+				a, label,span{
+					color: $main-color--Dgray;
+				}
+			}
 		}
 	}
 	&__contactArea{
@@ -258,7 +248,7 @@
 			transform: translate(-50%, -50%);
 			white-space: nowrap;
 			transition: .5s all;
-			@include min(768){top: 37%;}
+			@include min(768){top: 41%;}
 		}
 		&.-sub{// 基本日本語
 			position: absolute;
@@ -267,8 +257,8 @@
 			transform: translate(-50%, -50%);
 			white-space: nowrap;
 			transition: .5s all;
-			@include min(768){top: 64%;}
-			@include min(1400){top: 65%;}
+			@include min(768){top: 70%;}
+			@include min(1400){top: 70%;}
 		}
 	}
 
@@ -360,23 +350,30 @@
 			content: "";
 			position: absolute;
 			top: 55%;
-			left: 20%;
+			left: 15%;
 			transform: translateY(-55%);
 			width: 1px;
 			height: 80%;
 			background: $main-color--w;
 			transition: all 1s;
 		}
+		&.-concept::after {left: 13%}
+		&.-layout::after  {left: 20%}
+		&.-plan::after    {left: 22%}
+		&.-location::after{left: 15%}
+		&.-gallery::after {left: 13%}
+		&.-outline::after {left: 15%}
+
 		&:hover{
 			&::after{
-				background: $main-color--b;
+				background: $main-color--gray;
 			}
 		}
 		&.-active{
 			&::after{
 				width: 1px;
-				background: $main-color--b;
-				filter: drop-shadow(1px 1px 3px $main-color--b);
+				background: $main-color--Dgray;
+				// filter: drop-shadow(1px 1px 3px $main-color--b);
 			}
 
 		}

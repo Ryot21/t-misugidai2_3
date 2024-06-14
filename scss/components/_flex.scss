@@ -3,6 +3,7 @@
     display: flex;
 
     // 配置
+    &.-jc-st{justify-content: start;}
     &.-jc-sb{justify-content: space-between;}
     &.-jc-c_s{
         @include max(768){
@@ -46,10 +47,9 @@
     &.-col3{
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;
         li{
             position: relative;
-            width: calc(100%/3);
+            width: calc(calc(100%/3) - 5px);
             &::after{
                 content: "";
                 position: absolute;
