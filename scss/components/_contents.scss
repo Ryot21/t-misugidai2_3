@@ -350,6 +350,18 @@
 					left: 75%;
 					width: 15%;
 				}
+				&.-top{
+					top: -35%;
+					left: 75%;
+					width: 20%;
+					overflow: hidden;
+					z-index: 1;
+					@include min(768){
+						top: -60%;
+						left: 75%;
+						width: 15%;
+					}
+				}
 				&_bg{
 					top: 50%;
 					left: 50%;

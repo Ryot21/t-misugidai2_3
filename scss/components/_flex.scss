@@ -49,7 +49,9 @@
         flex-wrap: nowrap;
         li{
             position: relative;
-            width: calc(calc(100%/3) - 5px);
+            &:nth-child(1),
+            &:nth-child(2){width: auto;}
+            &:nth-child(3){width: calc(calc(100%/3) - 5px);}
             &::after{
                 content: "";
                 position: absolute;

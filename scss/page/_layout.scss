@@ -12,4 +12,11 @@
 		height: 150vh;
 		background: rgba(0, 0, 0, 0.392);
 	}
+
+	.imgItem{
+		margin: auto;
+		@include min(768){
+			max-width: 580px;
+		}
+	}
 }
