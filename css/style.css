@@ -231,6 +231,36 @@ h1.-ls-5, h2.-ls-5, h3.-ls-5, h4.-ls-5, h5.-ls-5, h6.-ls-5, p.-ls-5, a.-ls-5, sp
 h1.-ls-10, h2.-ls-10, h3.-ls-10, h4.-ls-10, h5.-ls-10, h6.-ls-10, p.-ls-10, a.-ls-10, span.-ls-10, label.-ls-10, button.-ls-10 {
   letter-spacing: 1rem;
 }
+@media (768px >= width) {
+  h1.-ls-n_s, h2.-ls-n_s, h3.-ls-n_s, h4.-ls-n_s, h5.-ls-n_s, h6.-ls-n_s, p.-ls-n_s, a.-ls-n_s, span.-ls-n_s, label.-ls-n_s, button.-ls-n_s {
+    letter-spacing: normal;
+  }
+}
+@media (768px >= width) {
+  h1.-ls-1_s, h2.-ls-1_s, h3.-ls-1_s, h4.-ls-1_s, h5.-ls-1_s, h6.-ls-1_s, p.-ls-1_s, a.-ls-1_s, span.-ls-1_s, label.-ls-1_s, button.-ls-1_s {
+    letter-spacing: 0.1rem;
+  }
+}
+@media (768px >= width) {
+  h1.-ls-2_s, h2.-ls-2_s, h3.-ls-2_s, h4.-ls-2_s, h5.-ls-2_s, h6.-ls-2_s, p.-ls-2_s, a.-ls-2_s, span.-ls-2_s, label.-ls-2_s, button.-ls-2_s {
+    letter-spacing: 0.2rem;
+  }
+}
+@media (768px >= width) {
+  h1.-ls-3_s, h2.-ls-3_s, h3.-ls-3_s, h4.-ls-3_s, h5.-ls-3_s, h6.-ls-3_s, p.-ls-3_s, a.-ls-3_s, span.-ls-3_s, label.-ls-3_s, button.-ls-3_s {
+    letter-spacing: 0.3rem;
+  }
+}
+@media (768px >= width) {
+  h1.-ls-4_s, h2.-ls-4_s, h3.-ls-4_s, h4.-ls-4_s, h5.-ls-4_s, h6.-ls-4_s, p.-ls-4_s, a.-ls-4_s, span.-ls-4_s, label.-ls-4_s, button.-ls-4_s {
+    letter-spacing: 0.4rem;
+  }
+}
+@media (768px >= width) {
+  h1.-ls-5_s, h2.-ls-5_s, h3.-ls-5_s, h4.-ls-5_s, h5.-ls-5_s, h6.-ls-5_s, p.-ls-5_s, a.-ls-5_s, span.-ls-5_s, label.-ls-5_s, button.-ls-5_s {
+    letter-spacing: 0.5rem;
+  }
+}
 h1.-shadow, h2.-shadow, h3.-shadow, h4.-shadow, h5.-shadow, h6.-shadow, p.-shadow, a.-shadow, span.-shadow, label.-shadow, button.-shadow {
   filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.637)) !important;
 }
@@ -4301,6 +4331,12 @@ button.swiper-pagination-bullet {
 .c-headerNav a.-location::after {
   left: 15%;
 }
+.c-headerNav a.-access::after {
+  left: 23%;
+}
+.c-headerNav a.-quality::after {
+  left: 18%;
+}
 .c-headerNav a.-gallery::after {
   left: 13%;
 }
@@ -4500,12 +4536,6 @@ button.swiper-pagination-bullet {
 }
 .c-contents.-f-view {
   position: relative;
-  overflow: hidden;
-}
-@media (768px >= width) {
-  .c-contents.-f-view .imgBox {
-    opacity: 0.75;
-  }
 }
 .c-contents.-f-view .c-contentsBox {
   position: absolute;
@@ -4598,98 +4628,24 @@ button.swiper-pagination-bullet {
     left: 75%;
   }
 }
-.c-contents.-f-view .c-contentsBox.-f-bird_01 {
-  top: 20%;
-  left: 15%;
-  width: 5%;
-}
-@media (width >= 768px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_01 {
-    top: 10%;
-    left: 2%;
-    width: 4%;
-  }
-}
-@media (width >= 1400px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_01 {
-    top: 10%;
-    left: 15%;
-    width: 3%;
-  }
-}
-.c-contents.-f-view .c-contentsBox.-f-bird_02 {
-  top: 20%;
-  left: 23%;
-  width: 3%;
-}
-@media (width >= 768px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_02 {
-    top: 7%;
-    left: 7%;
-    width: 3%;
-  }
-}
-@media (width >= 1400px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_02 {
-    left: 18%;
-    width: 2%;
-  }
-}
-.c-contents.-f-view .c-contentsBox.-f-bird_03 {
-  top: 35%;
-  left: 77%;
-  width: 5%;
-}
-@media (width >= 768px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_03 {
-    top: 21%;
-    left: 84%;
-    width: 2.5%;
-  }
-}
-@media (width >= 1400px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_03 {
-    top: 18%;
-    left: 87%;
-    width: 2%;
-  }
-}
-@media (width >= 768px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_04 {
-    top: 60%;
-    left: 57%;
-    width: 2.5%;
-  }
-}
-@media (width >= 1400px) {
-  .c-contents.-f-view .c-contentsBox.-f-bird_04 {
-    top: 63%;
-    left: 53%;
-    width: 2.5%;
-  }
-}
-.c-contents.-f-view .c-contentsBox.-f-border {
-  top: 36%;
-  left: 25%;
-  width: 50%;
-}
-@media (width >= 768px) {
-  .c-contents.-f-view .c-contentsBox.-f-border {
-    top: 22%;
-    left: 63.5%;
-    width: 20%;
-  }
-}
-@media (width >= 1400px) {
-  .c-contents.-f-view .c-contentsBox.-f-border {
-    top: 20%;
-    left: 65%;
-  }
-}
 .c-contents.-f-view .c-contentsBox.-f-text {
   bottom: 0;
   left: 80%;
   transform: scale(0.9);
+}
+.c-contents.-f-view .c-contentsBox.-tatePic {
+  top: 80%;
+  left: 75%;
+  width: 20%;
+  overflow: hidden;
+  z-index: 1;
+}
+@media (width >= 768px) {
+  .c-contents.-f-view .c-contentsBox.-tatePic {
+    top: 80%;
+    left: 75%;
+    width: 15%;
+  }
 }
 .c-contents.-imgBg {
   position: relative;
@@ -4717,20 +4673,6 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-tatePic {
     top: 70%;
-    left: 75%;
-    width: 15%;
-  }
-}
-.c-contents.-imgBg .c-contentsBox.-tatePic.-top {
-  top: -35%;
-  left: 75%;
-  width: 20%;
-  overflow: hidden;
-  z-index: 1;
-}
-@media (width >= 768px) {
-  .c-contents.-imgBg .c-contentsBox.-tatePic.-top {
-    top: -60%;
     left: 75%;
     width: 15%;
   }

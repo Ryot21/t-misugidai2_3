@@ -85,6 +85,14 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     &.-ls-4{letter-spacing: .4rem;}
     &.-ls-5{letter-spacing: .5rem;}
     &.-ls-10{letter-spacing: 1rem;}
+    &.-ls-n_s{@include max(768){ letter-spacing: normal;}}
+    &.-ls-1_s{@include max(768){ letter-spacing: .1rem;}}
+    &.-ls-2_s{@include max(768){ letter-spacing: .2rem;}}
+    &.-ls-3_s{@include max(768){ letter-spacing: .3rem;}}
+    &.-ls-4_s{@include max(768){ letter-spacing: .4rem;}}
+    &.-ls-5_s{@include max(768){ letter-spacing: .5rem;}}
+
+
 
     // 影
     &.-shadow{filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.637)) !important;}
