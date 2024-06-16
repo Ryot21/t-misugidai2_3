@@ -61,8 +61,16 @@
             .fadeLeft,
             .fadeRight{transition: 5s all;}
             &-active{//アクティブ時のアクション
-                .zoomIn{transform: scale(1.03);}
-                .zoomOut{transform: scale(0.97);}
+                .zoomIn{
+                    transform: scale(1.1);
+                    @include min(768){
+                        transform: scale(1.03);
+                    }
+                }
+                .zoomOut{
+                    transform: scale(0.95);
+                    @include min(768){transform: scale(0.97);}
+                }
                 .fadeLeft{transform: translateX(-10%);}
                 .fadeRight{transform: translateX(10%);}
             }

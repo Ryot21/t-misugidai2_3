@@ -4466,9 +4466,9 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents.-f-slider .c-contentsBox.-f-bg_01 {
-  top: -1.6%;
-  left: -5%;
-  width: 110%;
+  top: -3.5%;
+  left: -15%;
+  width: 131%;
   z-index: -1;
 }
 @media (width >= 768px) {
@@ -4479,8 +4479,8 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents.-f-slider .c-contentsBox.-f-bg_02 {
-  top: -0.75%;
-  left: -20%;
+  top: -3.5%;
+  left: -25%;
   width: 131%;
   z-index: -1;
 }
@@ -4492,7 +4492,7 @@ button.swiper-pagination-bullet {
   }
 }
 .c-contents.-f-slider .c-contentsBox.-f-bg_03 {
-  top: -1.5%;
+  top: -3%;
   left: -10%;
   width: 117.5%;
   z-index: -1;
@@ -6161,10 +6161,20 @@ a {
   transition: 5s all;
 }
 .swiper.swiper-Fview .swiper-slide-active .zoomIn {
-  transform: scale(1.03);
+  transform: scale(1.1);
+}
+@media (width >= 768px) {
+  .swiper.swiper-Fview .swiper-slide-active .zoomIn {
+    transform: scale(1.03);
+  }
 }
 .swiper.swiper-Fview .swiper-slide-active .zoomOut {
-  transform: scale(0.97);
+  transform: scale(0.95);
+}
+@media (width >= 768px) {
+  .swiper.swiper-Fview .swiper-slide-active .zoomOut {
+    transform: scale(0.97);
+  }
 }
 .swiper.swiper-Fview .swiper-slide-active .fadeLeft {
   transform: translateX(-10%);
