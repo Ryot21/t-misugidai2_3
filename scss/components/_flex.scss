@@ -5,6 +5,7 @@
     // 配置
     &.-jc-st{justify-content: start;}
     &.-jc-sb{justify-content: space-between;}
+    &.-jc-c{justify-content: center;}
     &.-jc-c_s{
         @include max(768){
             justify-content: center;
@@ -143,28 +144,13 @@
     // コンテンツカラム（sp:pc 2:2）
     &.-col2_2{
         flex-wrap: wrap;
-        li{
-            width: calc(50% - 5px);
+        .flexItem{
+            width: 45%;
             margin: 0;
-            &:nth-child(odd){margin-right: 5px;}
-            &:nth-child(even){margin-left: 5px;}
-            @include min(768){
-                width: calc(50% - 15px);
-                &:nth-child(odd){margin-right: 15px;}
-                &:nth-child(even){margin-left: 15px;}
-            }
-        }
-        &.-r{
-            li{
-                width: calc(50% - 5px);
-                margin: 0;
-                &:nth-child(odd){margin-left: 5px;}
-                &:nth-child(even){margin-right: 5px;}
-                @include min(768){
-                    width: calc(50% - 15px);
-                    &:nth-child(odd){margin-left: 15px;}
-                    &:nth-child(even){margin-right: 15px;}
-                }
+            @include min(768){width: 45%;}
+            &.-text{
+                width: 55%;
+                @include min(768){width: 55%;}
             }
         }
         &__in{// コンテンツ > コンテンツアイテム

@@ -5130,6 +5130,9 @@ button.swiper-pagination-bullet {
 .c-flex.-jc-sb {
   justify-content: space-between;
 }
+.c-flex.-jc-c {
+  justify-content: center;
+}
 @media (768px >= width) {
   .c-flex.-jc-c_s {
     justify-content: center;
@@ -5295,46 +5298,21 @@ button.swiper-pagination-bullet {
 .c-flex.-col2_2 {
   flex-wrap: wrap;
 }
-.c-flex.-col2_2 li {
-  width: calc(50% - 5px);
+.c-flex.-col2_2 .flexItem {
+  width: 45%;
   margin: 0;
 }
-.c-flex.-col2_2 li:nth-child(odd) {
-  margin-right: 5px;
+@media (width >= 768px) {
+  .c-flex.-col2_2 .flexItem {
+    width: 45%;
+  }
 }
-.c-flex.-col2_2 li:nth-child(even) {
-  margin-left: 5px;
+.c-flex.-col2_2 .flexItem.-text {
+  width: 55%;
 }
 @media (width >= 768px) {
-  .c-flex.-col2_2 li {
-    width: calc(50% - 15px);
-  }
-  .c-flex.-col2_2 li:nth-child(odd) {
-    margin-right: 15px;
-  }
-  .c-flex.-col2_2 li:nth-child(even) {
-    margin-left: 15px;
-  }
-}
-.c-flex.-col2_2.-r li {
-  width: calc(50% - 5px);
-  margin: 0;
-}
-.c-flex.-col2_2.-r li:nth-child(odd) {
-  margin-left: 5px;
-}
-.c-flex.-col2_2.-r li:nth-child(even) {
-  margin-right: 5px;
-}
-@media (width >= 768px) {
-  .c-flex.-col2_2.-r li {
-    width: calc(50% - 15px);
-  }
-  .c-flex.-col2_2.-r li:nth-child(odd) {
-    margin-left: 15px;
-  }
-  .c-flex.-col2_2.-r li:nth-child(even) {
-    margin-right: 15px;
+  .c-flex.-col2_2 .flexItem.-text {
+    width: 55%;
   }
 }
 .c-flex.-col2_2__in li {
