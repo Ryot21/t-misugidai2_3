@@ -157,6 +157,20 @@ h1.-b-btm::after, h2.-b-btm::after, h3.-b-btm::after, h4.-b-btm::after, h5.-b-bt
   width: 100%;
   background: #b6b6b6;
 }
+h1.-b-btm._p02::after, h2.-b-btm._p02::after, h3.-b-btm._p02::after, h4.-b-btm._p02::after, h5.-b-btm._p02::after, h6.-b-btm._p02::after, p.-b-btm._p02::after, a.-b-btm._p02::after, span.-b-btm._p02::after, label.-b-btm._p02::after, button.-b-btm._p02::after {
+  content: "";
+  position: absolute;
+  bottom: -35%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #b6b6b6;
+}
+@media (width >= 768px) {
+  h1.-b-btm._p02::after, h2.-b-btm._p02::after, h3.-b-btm._p02::after, h4.-b-btm._p02::after, h5.-b-btm._p02::after, h6.-b-btm._p02::after, p.-b-btm._p02::after, a.-b-btm._p02::after, span.-b-btm._p02::after, label.-b-btm._p02::after, button.-b-btm._p02::after {
+    bottom: -55%;
+  }
+}
 h1.-right, h2.-right, h3.-right, h4.-right, h5.-right, h6.-right, p.-right, a.-right, span.-right, label.-right, button.-right {
   text-align: right;
 }

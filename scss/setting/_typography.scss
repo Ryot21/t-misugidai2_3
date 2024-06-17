@@ -63,6 +63,20 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
             width: 100%;
             background: $main-color--gray;
         }
+        &._p02{
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -35%;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                background: $main-color--gray;
+                @include min(768){
+                    bottom: -55%;
+                }
+            }
+        }
     }
 
     // 位置
