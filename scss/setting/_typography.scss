@@ -78,6 +78,27 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
             }
         }
     }
+    &.-pointTitle{
+        position: relative;
+        width: auto;
+        &::before{
+            con
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 1px;
+            height: 100%;
+            background: $main-color--b;
+        }
+        &::after{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 1px;
+            height: 100%;
+            background: $main-color--b;
+        }
+    }
 
     // 位置
     &.-right{text-align: right;}

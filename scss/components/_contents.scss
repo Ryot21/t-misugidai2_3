@@ -249,15 +249,18 @@
 			}
 
 			&.-tatePic{
-				top: 80%;
-				left: 75%;
-				width: 20%;
+				top: 140%;
+				left: 70%;
+				width: 18%;
 				overflow: hidden;
 				box-shadow: 2px 2px 4px rgb(67 67 67 / 20%);
 				z-index: 1;
 				@include min(768){
-					top: 80%;
-					left: 75%;
+					// top: 80%;
+					// left: 75%;
+					// width: 15%;
+					top: 120%;
+					left: 62.8%;
 					width: 15%;
 				}
 			}
@@ -298,6 +301,16 @@
 					top: 80%;
 					@include min(768){
 						top: 65%;
+					}
+				}
+
+				&._p03{
+					top: 0%;
+					width: 18%;
+					@include min(768){
+						top: -15%;
+						left: 62.5%;
+						width: 15%;
 					}
 				}
 			}
