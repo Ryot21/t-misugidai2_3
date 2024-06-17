@@ -27,15 +27,37 @@
 		}
 	}
 	&.-img{
+		position: relative;
 		display: block;
-        transform: scale(1);
         transition-duration: 0.5s;
 		transition: all 0.5s ease-in-out;
-        overflow: hidden;
 		&:hover{
-			transform: scale(1.025);
-			transition-duration: 0.2s;
-			// box-shadow: 1px 1px 4px 0px $item-hover--bg;
+			&::before {
+				background: $main-color--b;
+			}
+		}
+		&::before{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 1px;
+			width: 100%;
+			background: white;
+			transition-duration: .5s;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: -15px;
+			transform: translateY(-50%);
+			width: 12px;
+			height: 12px;
+			background: url(../images/item/link-icon.png);
+			background-repeat: no-repeat;
+			
 		}
 	}
 	&.-text{

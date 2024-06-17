@@ -9,6 +9,9 @@
 		width: 90%;
 		margin: auto;
 		@include min(768){
+			width: 58% !important;
+		}
+		@include min(1000){
 			width: 56% !important;
 			max-width: 900px;
 		}
@@ -250,6 +253,7 @@
 				left: 75%;
 				width: 20%;
 				overflow: hidden;
+				box-shadow: 2px 2px 4px rgb(67 67 67 / 20%);
 				z-index: 1;
 				@include min(768){
 					top: 80%;
@@ -276,24 +280,106 @@
 			}
 			// コンテンツ > 縦画像
 			&.-tatePic{
-				top: 85%;
+				top: 70%;
 				left: 70%;
-				// transform: translateX(-50%);
+				transform: translateY(-50%);
 				width: 20%;
 				overflow: hidden;
+				box-shadow: 2px 2px 4px rgb(67 67 67 / 20%);
 				z-index: 1;
 				@include min(768){
-					top: 70%;
+					top: 15%;
 					left: 75%;
 					width: 15%;
 				}
+				@include min(1400){top: 0;}
 
-				&_bg{
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					width: 100%;
+				&._p02{
+					top: 80%;
+					@include min(768){
+						top: 65%;
+					}
 				}
+			}
+			// 帯 > テキスト
+			&.-obi-text{
+				top: 80%;
+				left: 74%;
+				transform: translate(-50%, -50%);
+				width: auto;
+				@include min(768){
+					top: 60%;
+					left: 65%;
+					transform: translate(-50%, -50%);
+					width: 50%;
+				}
+			}
+
+			// 周辺環境 > 目的地までに要する時間
+			&.-min{
+				width: auto;
+				&.-item01{// 宮沢湖
+					@include max(768){
+						right: 0;
+					}
+					@include min(768){
+						top: 110%;
+						left: 0%;
+					}
+					@include min(1400){
+						left: 23%;
+					}
+					@include min(1600){
+						top: 110.5%;
+						left: 30.7%;
+					}
+				}
+				&.-item02{// 名栗湖
+					@include max(1100){
+						right: 0;
+					}
+					@include min(1100){
+						top: 107.5%;
+						left: 0%;
+					}
+					@include min(1400){
+						left: 17%;
+					}
+					@include min(1600){
+						left: 25.7%;
+					}
+				}
+				&.-item03{// 飯能河原
+					right: 0;
+				}
+				&.-item04{// 吾妻峡
+					right: 0;
+				}
+			}
+			// 周辺環境 > 各施設リンク
+			&.-link{
+				&.-item01{// 宮沢湖
+					top: 130%;
+					width: 100%;
+					@include min(768){
+						top: 120%;
+						right: 0;
+						width: auto;
+					}
+				}
+				&.-item02{// 名栗湖
+					top: 120%;
+					width: 100%;
+					@include min(768){
+						top: 113%;
+						right: 0;
+						width: auto;
+					}
+				}
+				// 飯能河原
+				// &.-item03{
+
+				// }
 			}
 		}
 	}

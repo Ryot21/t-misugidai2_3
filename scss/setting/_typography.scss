@@ -45,14 +45,24 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     // font-family: $f-gothic;
     font-weight: $f-n;
     font-style: normal;
-    // text-wrap: balance;
-    // word-break: auto-phrase;
 	line-height: 1.3;
 
     // ボーダー
     &.b-text{
         display: inline;
         text-decoration: underline;
+    }
+    &.-b-btm{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -80%;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            background: $main-color--gray;
+        }
     }
 
     // 位置
@@ -161,6 +171,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
         &.s-S{
             font-size: 1.1rem;
             @include min(768){font-size: clamp(1rem, 1.2vw, 1.5rem);}
+            &.-s10{@include max(768){font-size: 1rem;}}
             &.-s12{@include max(768){font-size: 1.2rem;}}
         }
         &.s-M{
