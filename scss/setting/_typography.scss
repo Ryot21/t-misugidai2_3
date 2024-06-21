@@ -78,27 +78,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
             }
         }
     }
-    &.-pointTitle{
-        position: relative;
-        width: auto;
-        &::before{
-            con
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 1px;
-            height: 100%;
-            background: $main-color--b;
-        }
-        &::after{
-            position: absolute;
-            top: 50%;
-            right: 0;
-            width: 1px;
-            height: 100%;
-            background: $main-color--b;
-        }
-    }
+
 
     // 位置
     &.-right{text-align: right;}
@@ -119,7 +99,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     &.-lh-1_3_s{@include max(768){ line-height: 1.3;}}
 	&.-lh-1_5_s{@include max(768){ line-height: 1.5;}}
     &.-lh-1_8_s{@include max(768){ line-height: 1.8;}}
-    &.-lh-2_s  {@include max(768){ line-height: 2;}}
+    &.-lh-2_s  {@include max(768){ line-height: .5;}}
     &.-lh-3_s  {@include max(768){ line-height: 3;}}
 
     // 文字間隔
@@ -128,7 +108,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     &.-ls-2{letter-spacing: .2rem;}
     &.-ls-3{letter-spacing: .3rem;}
     &.-ls-4{letter-spacing: .4rem;}
-    &.-ls-5{letter-spacing: .5rem;}
+    &.-ls-5{letter-spacing: .1rem;}
     &.-ls-10{letter-spacing: 1rem;}
     &.-ls-n_s{@include max(768){ letter-spacing: normal;}}
     &.-ls-1_s{@include max(768){ letter-spacing: .1rem;}}
@@ -169,6 +149,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
 
     // 色
     &.-white{color: $main-color--w !important;}
+    &.-black{color: $main-color--b !important;}
     &.-color01{color: $site-color01 !important;}
     &.-color02{color: $site-color02 !important;}
     &.-color03{color: $site-color03 !important;}

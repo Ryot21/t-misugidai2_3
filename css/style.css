@@ -171,26 +171,6 @@ h1.-b-btm._p02::after, h2.-b-btm._p02::after, h3.-b-btm._p02::after, h4.-b-btm._
     bottom: -55%;
   }
 }
-h1.-pointTitle, h2.-pointTitle, h3.-pointTitle, h4.-pointTitle, h5.-pointTitle, h6.-pointTitle, p.-pointTitle, a.-pointTitle, span.-pointTitle, label.-pointTitle, button.-pointTitle {
-  position: relative;
-  width: auto;
-}
-h1.-pointTitle::before, h2.-pointTitle::before, h3.-pointTitle::before, h4.-pointTitle::before, h5.-pointTitle::before, h6.-pointTitle::before, p.-pointTitle::before, a.-pointTitle::before, span.-pointTitle::before, label.-pointTitle::before, button.-pointTitle::before {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 1px;
-  height: 100%;
-  background: #3b3b3b;
-}
-h1.-pointTitle::after, h2.-pointTitle::after, h3.-pointTitle::after, h4.-pointTitle::after, h5.-pointTitle::after, h6.-pointTitle::after, p.-pointTitle::after, a.-pointTitle::after, span.-pointTitle::after, label.-pointTitle::after, button.-pointTitle::after {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 1px;
-  height: 100%;
-  background: #3b3b3b;
-}
 h1.-right, h2.-right, h3.-right, h4.-right, h5.-right, h6.-right, p.-right, a.-right, span.-right, label.-right, button.-right {
   text-align: right;
 }
@@ -248,7 +228,7 @@ h1.-lh-4, h2.-lh-4, h3.-lh-4, h4.-lh-4, h5.-lh-4, h6.-lh-4, p.-lh-4, a.-lh-4, sp
 }
 @media (768px >= width) {
   h1.-lh-2_s, h2.-lh-2_s, h3.-lh-2_s, h4.-lh-2_s, h5.-lh-2_s, h6.-lh-2_s, p.-lh-2_s, a.-lh-2_s, span.-lh-2_s, label.-lh-2_s, button.-lh-2_s {
-    line-height: 2;
+    line-height: 0.5;
   }
 }
 @media (768px >= width) {
@@ -272,7 +252,7 @@ h1.-ls-4, h2.-ls-4, h3.-ls-4, h4.-ls-4, h5.-ls-4, h6.-ls-4, p.-ls-4, a.-ls-4, sp
   letter-spacing: 0.4rem;
 }
 h1.-ls-5, h2.-ls-5, h3.-ls-5, h4.-ls-5, h5.-ls-5, h6.-ls-5, p.-ls-5, a.-ls-5, span.-ls-5, label.-ls-5, button.-ls-5 {
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
 }
 h1.-ls-10, h2.-ls-10, h3.-ls-10, h4.-ls-10, h5.-ls-10, h6.-ls-10, p.-ls-10, a.-ls-10, span.-ls-10, label.-ls-10, button.-ls-10 {
   letter-spacing: 1rem;
@@ -343,6 +323,9 @@ h1.-f-En03, h2.-f-En03, h3.-f-En03, h4.-f-En03, h5.-f-En03, h6.-f-En03, p.-f-En0
 }
 h1.-white, h2.-white, h3.-white, h4.-white, h5.-white, h6.-white, p.-white, a.-white, span.-white, label.-white, button.-white {
   color: #ffffff !important;
+}
+h1.-black, h2.-black, h3.-black, h4.-black, h5.-black, h6.-black, p.-black, a.-black, span.-black, label.-black, button.-black {
+  color: #3b3b3b !important;
 }
 h1.-color01, h2.-color01, h3.-color01, h4.-color01, h5.-color01, h6.-color01, p.-color01, a.-color01, span.-color01, label.-color01, button.-color01 {
   color: #96bbc7 !important;
@@ -3952,7 +3935,7 @@ button.swiper-pagination-bullet {
   }
 }
 .c-footer__misugiShopArea {
-  width: 55%;
+  width: 65%;
   margin-right: 0;
   margin-left: auto;
 }
@@ -4691,7 +4674,7 @@ button.swiper-pagination-bullet {
 }
 .c-contents.-f-view .c-contentsBox.-tatePic {
   top: 140%;
-  left: 70%;
+  left: 75%;
   width: 18%;
   overflow: hidden;
   box-shadow: 2px 2px 4px rgba(67, 67, 67, 0.2);
@@ -4722,7 +4705,7 @@ button.swiper-pagination-bullet {
 }
 .c-contents.-imgBg .c-contentsBox.-tatePic {
   top: 70%;
-  left: 70%;
+  left: 73%;
   transform: translateY(-50%);
   width: 20%;
   overflow: hidden;
@@ -4820,8 +4803,26 @@ button.swiper-pagination-bullet {
     left: 25.7%;
   }
 }
-.c-contents.-imgBg .c-contentsBox.-min.-item03 {
-  right: 0;
+@media (1100px >= width) {
+  .c-contents.-imgBg .c-contentsBox.-min.-item03 {
+    right: 0;
+  }
+}
+@media (width >= 1100px) {
+  .c-contents.-imgBg .c-contentsBox.-min.-item03 {
+    top: 101%;
+    left: 0%;
+  }
+}
+@media (width >= 1400px) {
+  .c-contents.-imgBg .c-contentsBox.-min.-item03 {
+    left: 68%;
+  }
+}
+@media (width >= 1600px) {
+  .c-contents.-imgBg .c-contentsBox.-min.-item03 {
+    left: 25.7%;
+  }
 }
 .c-contents.-imgBg .c-contentsBox.-min.-item04 {
   right: 0;
@@ -4847,6 +4848,48 @@ button.swiper-pagination-bullet {
     right: 0;
     width: auto;
   }
+}
+.c-contents.-imgBg .c-contentsBox.-link.-item03 {
+  top: 130%;
+  width: 100%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-link.-item03 {
+    top: 110%;
+    right: 0;
+    width: auto;
+  }
+}
+.c-contents.-pointArea {
+  text-align: center;
+}
+.c-contents.-pointArea .pointArea-inner {
+  display: inline-block;
+}
+.c-contents.-pointArea .pointArea-Title {
+  position: relative;
+  width: auto;
+  padding: 0 20px;
+}
+.c-contents.-pointArea .pointArea-Title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 100%;
+  background: #3b3b3b;
+}
+.c-contents.-pointArea .pointArea-Title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 100%;
+  background: #3b3b3b;
 }
 
 .c-contents_title {
@@ -6163,6 +6206,9 @@ a {
   display: block;
   transition-duration: 0.5s;
   transition: all 0.5s ease-in-out;
+}
+.c-link.-img.-inline-b {
+  display: inline-block;
 }
 .c-link.-img:hover::before {
   background: #3b3b3b;

@@ -31,6 +31,7 @@
 		display: block;
         transition-duration: 0.5s;
 		transition: all 0.5s ease-in-out;
+		&.-inline-b{display: inline-block;}
 		&:hover{
 			&::before {
 				background: $main-color--b;

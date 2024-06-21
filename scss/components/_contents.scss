@@ -250,7 +250,7 @@
 
 			&.-tatePic{
 				top: 140%;
-				left: 70%;
+				left: 75%;
 				width: 18%;
 				overflow: hidden;
 				box-shadow: 2px 2px 4px rgb(67 67 67 / 20%);
@@ -284,7 +284,7 @@
 			// コンテンツ > 縦画像
 			&.-tatePic{
 				top: 70%;
-				left: 70%;
+				left: 73%;
 				transform: translateY(-50%);
 				width: 20%;
 				overflow: hidden;
@@ -363,7 +363,19 @@
 					}
 				}
 				&.-item03{// 飯能河原
-					right: 0;
+					@include max(1100){
+						right: 0;
+					}
+					@include min(1100){
+						top: 101%;
+						left: 0%;
+					}
+					@include min(1400){
+						left: 68%;
+					}
+					@include min(1600){
+						left: 25.7%;
+					}
 				}
 				&.-item04{// 吾妻峡
 					right: 0;
@@ -390,10 +402,51 @@
 					}
 				}
 				// 飯能河原
-				// &.-item03{
-
-				// }
+				&.-item03{
+					top: 130%;
+					width: 100%;
+					@include min(768){
+						top: 110%;
+						right: 0;
+						width: auto;
+					}
+				}
 			}
 		}
+	}
+
+	&.-pointArea{
+		text-align: center;
+		.pointArea{
+			&-inner{
+				display: inline-block;
+			}
+			&-Title{
+				position: relative;
+				width: auto;
+				padding: 0 20px;
+				&::before{
+					content: "";
+					position: absolute;
+					top: 50%;
+					left: 0;
+					transform: translateY(-50%);
+					width: 1px;
+					height: 100%;
+					background: $main-color--b;
+				}
+				&::after{
+					content: "";
+					position: absolute;
+					top: 50%;
+					right: 5%;
+					transform: translateY(-50%);
+					width: 1px;
+					height: 100%;
+					background: $main-color--b;
+				}
+			}
+		}
+
 	}
 }
