@@ -4803,12 +4803,17 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-obi-text {
     top: 60%;
-    left: 54.5%;
+    left: 57.5%;
     transform: translate(-50%, -50%);
     width: 50%;
   }
 }
-@media (width >= 768px) {
+@media (width >= 1000px) {
+  .c-contents.-imgBg .c-contentsBox.-obi-text {
+    left: 55.5%;
+  }
+}
+@media (width >= 1800px) {
   .c-contents.-imgBg .c-contentsBox.-obi-text {
     left: 48.5%;
   }

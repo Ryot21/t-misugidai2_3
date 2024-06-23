@@ -334,11 +334,12 @@
 				width: auto;
 				@include min(768){
 					top: 60%;
-					left: 54.5%;
+					left: 57.5%;
 					transform: translate(-50%, -50%);
 					width: 50%;
 				}
-				@include min(768){left: 48.5%;}
+				@include min(1000){left: 55.5%;}
+				@include min(1800){left: 48.5%;}
 			}
 
 			// 周辺環境 > 目的地までに要する時間
