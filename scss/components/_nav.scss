@@ -339,7 +339,7 @@
 // ヘッダー > ナビゲーション
 .c-headerNav{
 	@include min(768){width: 110.2%;}
-	a{
+	a,label{
 		position: relative;
 		// display: block;
 		transition: all 1s;

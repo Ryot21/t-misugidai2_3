@@ -268,9 +268,11 @@
 					left: 64.5%;
 					width: 15%;
 				}
-				@include min(1800){
-					left: 58.5%;
-				}
+				@include min(1600){left: 62%;}
+				@include min(1800){left: 58.5%;}
+				// &._p01{
+				// 	@include min(768){top: ;}
+				// }
 			}
 		}
 	}
@@ -336,6 +338,7 @@
 					transform: translate(-50%, -50%);
 					width: 50%;
 				}
+				@include min(768){left: 48.5%;}
 			}
 
 			// 周辺環境 > 目的地までに要する時間
@@ -359,7 +362,7 @@
 					right: 0;
 					left: auto;
 					@include min(768){
-						top: 103%;
+						top: 101%;
 					}
 				}
 				&.-item04{// 吾妻峡、天覧山

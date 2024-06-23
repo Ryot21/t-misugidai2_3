@@ -11,6 +11,11 @@
             justify-content: center;
         }
     }
+    &.-jc-c_tb{
+        @include min(768){
+            justify-content: center;
+        }
+    }
     &.-jc-e{justify-content: end;}
 
     // 縦

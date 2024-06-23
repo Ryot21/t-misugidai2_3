@@ -3082,7 +3082,7 @@ button.swiper-pagination-bullet {
     transform: translateX(-50%);
     width: 100vw;
     height: 1px;
-    background: #3b3b3b;
+    background: #ffffff;
   }
 }
 .c-header-wrapper.-no-b::after {
@@ -3444,7 +3444,7 @@ button.swiper-pagination-bullet {
   margin-right: -3%;
   margin-left: auto;
 }
-@media (width >= 1400px) {
+@media (width >= 1200px) {
   .c-header__misugidai .contactArea {
     width: 20%;
     margin-right: 0;
@@ -4355,11 +4355,11 @@ button.swiper-pagination-bullet {
     width: 110.2%;
   }
 }
-.c-headerNav a {
+.c-headerNav a, .c-headerNav label {
   position: relative;
   transition: all 1s;
 }
-.c-headerNav a::after {
+.c-headerNav a::after, .c-headerNav label::after {
   content: "";
   position: absolute;
   bottom: -5%;
@@ -4369,34 +4369,34 @@ button.swiper-pagination-bullet {
   background: #ffffff;
   transition: all 1s;
 }
-.c-headerNav a.-concept::after {
+.c-headerNav a.-concept::after, .c-headerNav label.-concept::after {
   width: 100%;
 }
-.c-headerNav a.-layout::after {
+.c-headerNav a.-layout::after, .c-headerNav label.-layout::after {
   width: 100%;
 }
-.c-headerNav a.-plan::after {
+.c-headerNav a.-plan::after, .c-headerNav label.-plan::after {
   width: 100%;
 }
-.c-headerNav a.-location::after {
+.c-headerNav a.-location::after, .c-headerNav label.-location::after {
   width: 100%;
 }
-.c-headerNav a.-access::after {
+.c-headerNav a.-access::after, .c-headerNav label.-access::after {
   width: 100%;
 }
-.c-headerNav a.-quality::after {
+.c-headerNav a.-quality::after, .c-headerNav label.-quality::after {
   width: 100%;
 }
-.c-headerNav a.-gallery::after {
+.c-headerNav a.-gallery::after, .c-headerNav label.-gallery::after {
   width: 100%;
 }
-.c-headerNav a.-outline::after {
+.c-headerNav a.-outline::after, .c-headerNav label.-outline::after {
   width: 100%;
 }
-.c-headerNav a:hover::after {
+.c-headerNav a:hover::after, .c-headerNav label:hover::after {
   background: #b6b6b6;
 }
-.c-headerNav a.-active::after {
+.c-headerNav a.-active::after, .c-headerNav label.-active::after {
   background: #808080;
 }
 
@@ -4718,6 +4718,11 @@ button.swiper-pagination-bullet {
     width: 15%;
   }
 }
+@media (width >= 1600px) {
+  .c-contents.-f-view .c-contentsBox.-tatePic {
+    left: 62%;
+  }
+}
 @media (width >= 1800px) {
   .c-contents.-f-view .c-contentsBox.-tatePic {
     left: 58.5%;
@@ -4803,6 +4808,11 @@ button.swiper-pagination-bullet {
     width: 50%;
   }
 }
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-obi-text {
+    left: 48.5%;
+  }
+}
 .c-contents.-imgBg .c-contentsBox.-min {
   width: auto;
 }
@@ -4830,7 +4840,7 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-min.-item03 {
-    top: 103%;
+    top: 101%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-min.-item04 {
@@ -5362,6 +5372,11 @@ button.swiper-pagination-bullet {
 }
 @media (768px >= width) {
   .c-flex.-jc-c_s {
+    justify-content: center;
+  }
+}
+@media (width >= 768px) {
+  .c-flex.-jc-c_tb {
     justify-content: center;
   }
 }
@@ -6575,14 +6590,13 @@ a {
 }
 
 .popup-open {
-  display: block;
   cursor: pointer;
   width: 100%;
   height: 100%;
 }
 @media (768px >= width) {
   .popup-open {
-    color: #ffffff;
+    display: block;
   }
 }
 .popup-overlay {
@@ -7829,6 +7843,7 @@ a {
 .a-fadeDown {
   opacity: 0;
   animation-name: fadeDownAnime;
+  perspective-origin: left center;
   animation-fill-mode: forwards;
 }
 @keyframes fadeDownAnime {

@@ -48,7 +48,7 @@
 				transform: translateX(-50%);
 				width: 100vw;
 				height: 1px;
-				background: $main-color--b;
+				background: $main-color--w;
 			}
 		}
 		// ボーダーなし
@@ -431,7 +431,7 @@
 			max-width: 250px;
 			margin-right: -3%;
 			margin-left: auto;
-			@include min(1400){
+			@include min(1200){
 				width: 20%;
 				margin-right: 0;
 			}

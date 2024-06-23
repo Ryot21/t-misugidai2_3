@@ -19,12 +19,11 @@
 }
 .popup{
     &-open {
-        display: block;
         cursor: pointer;
         width: 100%;
         height: 100%;
         @include max(768){
-            color: $main-color--w;
+            display: block;
         }
     }
     &-overlay {
