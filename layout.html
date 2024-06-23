@@ -96,12 +96,12 @@
 
     <!-- header / TOPと各ページの構造が異なる -->
     <header id="header" class="tb-pc c-header pdt1">
-        <div class="c-header-wrapper pdb1"><!-- バナー表示エリア -->
+        <div class="c-header-wrapper pdb2"><!-- バナー表示エリア -->
             <div class="c-header__misugidai">
                 <div class="tb-pc contactArea">
-                    <ul class="c-flex -col2_2__in">
-                        <li><p class="-right"><a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712981192" class="s-M -b -ws-n -ls-2">資料請求</a></p></li>
-                        <li><p class="-right"><a href="https://www.jyu-g.co.jp/contents/tour?checkid=712981192"    class="s-M -b -ws-n -ls-2">見学予約</a></p></li>
+                    <ul class="c-flex -jc-sb -col2_2__in -txt">
+                        <li><a href="https://www.jyu-g.co.jp/contents/inquiry?checkid=712981192" class="s-S _contact -b -ws-n -ls-2">資料請求</a></li>
+                        <li><a href="https://www.jyu-g.co.jp/contents/tour?checkid=712981192"    class="s-S _contact -b -ws-n -ls-2">見学予約</a></li>
                     </ul>
                 </div>
                 <ul class="c-header__lists c-flex -h-b_pc">
@@ -111,39 +111,41 @@
                             <div class="c-contents -imgBg">
                                 <div class="imgBox"><img src="images/SVG/site-logo_b.svg"></div>
                                 <div class="c-contentsBox -ja">
-                                    <p class="s-SS -tate -f-En03 -ls-10">MISUGIDAI</p>
+                                    <p class="s-SS -tate -f-En03 -ls-5">MISUGIDAI</p>
                                 </div>
                             </div>
                         </a>
                     </li>
                     <!-- お問い合わせ・リード文・ナビゲーション -->
                     <li class="tb-pc c-header__item">
-                        <div class="readArea mgb5 mgb5s pdl4">
+                        <div class="readArea mgb4 mgb4s">
                             <ul class="c-flex -col3 -jc-st -h-c">
                                 <li><p class="s-M -b -center -ws-n  -ls-10">山と街の境、</p></li>
                                 <li><p class="s-M -b -center -ws-n  -ls-10">美しい地。</p></li>
-                                <li class="pdr15"><img src="images/SVG/site-grancia_b.svg" alt="GRANCIA"></li>
+                                <li><img src="images/SVG/site-grancia_b.svg" alt="GRANCIA"></li>
                             </ul>
                         </div>
-                        <nav class="navArea c-headerNav pdl5">
+                        <nav class="navArea c-headerNav">
                             <ul class="c-flex -col6">
-                                <li><a class="s-M -b -concept -center -ls-2"        href="concept.html">コンセプト<br><p class="s-SS -b -center -f-En03">CONCEPT</p></a></li>
-                                <li><a class="s-M -b -location -center -ls-2"       href="location.html">周辺環境<br><p class="s-SS -b -center -f-En03">LOCATION</p></a></li>
-                                <li><a class="s-M -b -layout -center -ls-2 -active" href="layout.html">区画<br><p class="s-SS -b -center -f-En03">LAYOUT</p></a></li>
-                                <li><a class="s-M -b -access -center -ls-2"         href="access.html">交通<br><p class="s-SS -b -center -f-En03">ACCESS</p></a></li>
-                                <li><a class="s-M -b -quality -center -ls-2"        href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank">住まい<br><p class="s-SS -b -center -f-En03">QUALITY</p></a></li>
-                                <li><a class="s-M -b -outline -center -ls-2"        href="">物件概要<br><p class="s-SS -b -center -f-En03">OUTLINE</p></a></li>
+                                <li><a class="s-M -b -concept  -left -lh-1_2 -ls-3"         href="concept.html">コンセプト<br><span class="s-SS -b -left">CONCEPT</span></a></li>
+                                <li><a class="s-M -b -location -left -lh-1_2 -ls-3"         href="location.html">周辺環境<br><span class="s-SS -b -left">LOCATION</span></a></li>
+                                <li><a class="s-M -b -layout   -left -lh-1_2 -ls-3 -active" href="layout.html">区画<br><span class="s-SS -b -left">LAYOUT</span></a></li>
+                                <li><a class="s-M -b -access   -left -lh-1_2 -ls-3"         href="access.html">交通<br><span class="s-SS -b -left">ACCESS</span></a></li>
+                                <li><a class="s-M -b -quality  -left -lh-1_2 -ls-3"         href="https://www.jyukyo-cnst.co.jp/house/order/house-making/" target="_blank">住まい<br><span class="s-SS -b -left">QUALITY</span></a></li>
+                                <li>
+                                    <!-- <a     class="s-M -b -outline -left -lh-1_2 -ls-3"      href="">物件概要<br><span class="s-SS -b -left">OUTLINE</span></a> -->
+                                    <label class="s-M -b -outline -left -ls-1-2 -ls-3 popup popup-open" for="popup01">物件概要<br><span class="s-SS -b -left">OUTLINE</span></label>
+                                </li>
                             </ul>
                         </nav>
                     </li>
-
                 </ul>
             </div>
         </div>
     </header>
     <!-- //header -->
 
-    <main class="c-container mgb2 mgb10 mgb20s">
+    <main class="c-container mgb2 mgb20s">
 
         <!-- ファーストビュー -->
         <div class="c-contents -f-view mgb10 mgb10s">
@@ -162,10 +164,10 @@
         <div class="c-contents -imgBg mgb10 mgb5s">
             <div class="imgBox">
                 <div class="c-contents-inner">
-                    <p class="s-ML -b -lh-1 -ls-5 -left mgb5 mgb5s">
+                    <p class="s-ML -b -lh-1 -left mgb5 mgb5s">
                         美杉台へ<br><span class="s-SS -b">TO MISUGIDAI</span>
                     </p>
-                    <p class="s-M -s10 -b -left -lh-2 -ls-5 -ls-2_s a-fadeRight -sc-auto">
+                    <p class="s-M -s10 -b -left -lh-2 -ls-2_s a-fadeRight -sc-auto">
                         飯能駅の南口を出るとすぐに<br>
                         美杉台通りへと繋がります。<br>
                         清流・入間川にかかる飯能大橋を渡り、<br>
@@ -177,7 +179,7 @@
             </div>
         </div>
         <!-- 地図 -->
-        <div class="c-contents mgb10 mgb20s">
+        <div class="c-contents mgb20 mgb20s">
             <div class="c-contents-inner a-fade -sc4">
                 <div class="imgBox imgItem"><img src="images/pic/layout/layout-map.jpg" alt="周辺MAP"></div>
             </div>
@@ -187,12 +189,12 @@
         <div class="c-contents -imgBg mgb15 mgb5s">
             <div class="imgBox">
                 <div class="c-contents-inner">
-                    <p class="s-ML -b -lh-1 -ls-5 -left mgb5 mgb5s">
+                    <p class="s-ML -b -lh-1 -left mgb5 mgb5s">
                         区画<br><span class="s-SS -b">LAYOUT</span>
                     </p>
-                    <p class="s-M -s10 -b -left -lh-2 -ls-5 -ls-2_s mgb10 mgb3s a-fadeRight -sc-auto">
+                    <p class="s-M -s10 -b -left -lh-2 -ls-2_s mgb10 mgb3s a-fadeRight -sc-auto">
                         全区画55坪以上。<br>
-                        南東側は擁壁となっており、<br class="sp">緑道に囲まれた敷地は<br>
+                        南東側は擁壁となっており、緑道に囲まれた敷地は<br>
                         どの区画も日当たりと風通しに恵まれています。<br>
                         歩いて行ける距離に日々の暮らしを支える<br>
                         周辺環境が充実していることも魅力の一つです。
@@ -206,17 +208,17 @@
             </div>
         </div>
         <!--      > 画像 -->
-        <div class="c-contents mgb10 mgb20s">
+        <div class="c-contents mgb5 mgb5s">
             <div class="c-contents-inner a-fade -sc4">
                 <div class="imgBox imgItem"><img src="images/pic/layout/layout-kukaku.jpg" alt="区画図"></div>
             </div>
         </div>
         <!--    　> POINT -->
-        <div class="c-contents -pointArea mgb10 mgb20s">
+        <div class="c-contents -pointArea mgb20 mgb20s">
             <div class="pointArea-inner mgb3 mgb3s">
-                <p class="s-M -b -center -ls-5 pointArea-Title">POINT</p>
+                <p class="s-M -b -center pointArea-Title">POINT</p>
             </div>
-            <p class="s-S -b -center -lh-3 -ls-5">
+            <p class="s-S -b -center -lh-3">
                 55坪以上のゆとりある敷地<br>
                 日当たり風通しに恵まれた全棟南東向き<br>
                 美杉台の中でも周辺環境・交通面で利便性の高いエリア<br>
@@ -228,10 +230,10 @@
         <div class="c-contents -imgBg mgb15 mgb5s">
             <div class="c-contents-inner">
                 <div class="imgBox">
-                    <p class="s-ML -b -lh-1 -ls-5 -left mgb5 mgb5s">
+                    <p class="s-ML -b -lh-1 -left mgb5 mgb5s">
                         間取り<br><span class="s-SS -b">PLAN</span>
                     </p>
-                    <p class="s-M -s10 -b -left -lh-2 -ls-5 -ls-2_s mgb5 mgb3s a-fadeRight -sc-auto">
+                    <p class="s-M -s10 -b -left -lh-2 -ls-2_s mgb5 mgb3s a-fadeRight -sc-auto">
                         広い土地に自由に思い描く家。<br>
                         団欒の場、家族の部屋、<br>台所、浴室、書斎、客間…<br>
                         理想を詰め込み、暮らしていく家。<br>
@@ -246,28 +248,28 @@
                 </div>
             </div>
         </div>
-        <!-- 間取り -->
-        <div class="c-contents mgb10 mgb20s">
+        <!-- 　　　> 画像 -->
+        <div class="c-contents mgb5 mgb5s">
             <div class="c-contents-inner a-fade -sc4">
                 <div class="imgBox imgItem mgb1 mgb2s"><img src="images/pic/layout/layout-madori.jpg" alt="間取り図"></div>
                 <p class="s-S -center -lh-1_5_s -ls-2_s">セミオーダー住宅 参考プラン　<br class="sp">建物価格2030万｜建物面積27坪｜オプション100万</p>
             </div>
         </div>
         <!--    　> POINT -->
-        <div class="c-contents -pointArea mgb10 mgb20s">
+        <div class="c-contents -pointArea mgb20 mgb20s">
             <div class="pointArea-inner mgb3 mgb3s">
-                <p class="s-M -b -center -ls-5 pointArea-Title">POINT</p>
+                <p class="s-M -b -center pointArea-Title">POINT</p>
             </div>
-            <p class="s-S -b -center -lh-3 -ls-5">
-                <a class="c-link -img -inline-b" href="https://www.jyukyo-cnst.co.jp/house/order/" target="_blank">住協の注文住宅・セミオーダー住宅</a><br>
-                <a class="c-link -img -inline-b" href="https://www.jyukyo-cnst.co.jp/house/order/house-making/quality/basis/" target="_blank">構造計算による耐震等級3と経済的な断熱性能等級5</a><br>
-                <a class="c-link -img -inline-b" href="https://www.jyukyo-cnst.co.jp/house/order/house-making/quality/hinoki/" target="_blank">国産のJAS認定無垢「檜」で建てる家</a><br>
-                <a class="c-link -img -inline-b" href="https://www.jyukyo-cnst.co.jp/house/order/house-making/support/" target="_blank">安心安全の最長35年保証</a>
+            <p class="s-S -b -center -lh-3 pdl2">
+                <a class="c-link -img -inline-b -b" href="https://www.jyukyo-cnst.co.jp/house/order/" target="_blank">住協の注文住宅・セミオーダー住宅</a><br>
+                <a class="c-link -img -inline-b -b" href="https://www.jyukyo-cnst.co.jp/house/order/house-making/quality/basis/" target="_blank">構造計算による耐震等級3と経済的な断熱性能等級5</a><br>
+                <a class="c-link -img -inline-b -b" href="https://www.jyukyo-cnst.co.jp/house/order/house-making/quality/hinoki/" target="_blank">国産のJAS認定無垢「檜」で建てる家</a><br>
+                <a class="c-link -img -inline-b -b" href="https://www.jyukyo-cnst.co.jp/house/order/house-making/support/" target="_blank">安心安全の最長35年保証</a>
             </p>
         </div>
 
         <!-- 最後尾 > 帯 -->
-        <div class="c-contents mgb10 mgb10s a-zoomImg">
+        <div class="c-contents a-zoomImg">
             <div class="imgBox a-fadeUp -sc-auto">
                 <img alt="_カバー" src="images/f-view/layout/layout-view02-bg.png">
             </div>
@@ -280,7 +282,7 @@
         <div class="c-footer-wrapper mgb1 mgb10s">
             <div class="c-footer__misugiArea mgb5 mgb20s">
                 <ul class="m__lists c-flex -h-c">
-                    <li class="tb-pc m__list -left"><p class="s-M -b -s-nav -ls-3">飯能美杉台2丁目3期 建築条件付き土地5棟</p></li>
+                    <li class="tb-pc m__list -left"><p class="pc s-M -b -s-nav -ls-3">飯能美杉台2丁目3期 建築条件付き土地5棟</p></li>
                     <li class="m__list -right">
                         <nav class="c-footerNav">
                             <div class="tb-pc">
@@ -326,7 +328,7 @@
             <div class="c-footer__misugiShopArea">
                 <ul class="c-footer__shopFlex">
                     <li class="pdr1 pdr1s mgb3 mgb3s"><img src="images/SVG/jyukyo-logo-black.svg" alt="住協"></li>
-                    <li><p class="s-M -b -s-nav - -ws-n -right -ls-4">飯能支店 | <a href="tel:0120-74-5900" class="s-M -b -s-nav">0120-74-5900</a></p></li>
+                    <li><p class="s-M -b -s-nav - -ws-n -right -ls-2">飯能支店 | <a href="tel:0120-74-5900" class="s-M -b -s-nav">0120-74-5900</a></p></li>
                 </ul>
             </div>
         </div>

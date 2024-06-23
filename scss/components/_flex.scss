@@ -79,7 +79,7 @@
             position: relative;
             &:nth-child(1),
             &:nth-child(2){width: auto;}
-            &:nth-child(3){width: calc(calc(100%/3) - 5px);}
+            &:nth-child(3){width: calc(calc(100%/3) - 40px);}
             &::after{
                 content: "";
                 position: absolute;
@@ -183,7 +183,7 @@
         }
         &__in{// コンテンツ > コンテンツアイテム
             li{
-                width: 50% !important;
+                width: 50%;
                 // width: calc(50% - 5px) !important;
                 // margin: 0;
                 // &:nth-child(odd){
@@ -219,6 +219,11 @@
                         &:nth-child(even){margin-right: 15px !important;}
                     }
                 }
+            }
+
+            // テキスト幅
+            &.-txt{
+                li{width: auto;}
             }
         }
     }

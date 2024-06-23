@@ -42,10 +42,12 @@ $f-b: bold;
 h1,h2,h3,h4,h5,h6,p,a,span,label,button{
 	color: $main-color--b;
 	font-family: $f-mincho;
-    // font-family: $f-gothic;
     font-weight: $f-n;
     font-style: normal;
 	line-height: 1.3;
+    @include min(768){
+        letter-spacing: .1rem;
+    }
 
     // ボーダー
     &.b-text{
@@ -88,6 +90,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     // 行間
     &.-lh-n    {line-height: normal;}
 	&.-lh-1    {line-height: 1;}
+    &.-lh-1_2  {line-height: 1.2;}
 	&.-lh-1_5  {line-height: 1.5;}
     &.-lh-1_8  {line-height: 1.8;}
     &.-lh-2    {line-height: 2;}
@@ -108,11 +111,11 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
     &.-ls-2{letter-spacing: .2rem;}
     &.-ls-3{letter-spacing: .3rem;}
     &.-ls-4{letter-spacing: .4rem;}
-    &.-ls-5{letter-spacing: .1rem;}
+    &.-ls-5{letter-spacing: .5rem;}
     &.-ls-10{letter-spacing: 1rem;}
     &.-ls-n_s{@include max(768){ letter-spacing: normal;}}
     &.-ls-1_s{@include max(768){ letter-spacing: .1rem;}}
-    &.-ls-2_s{@include max(768){ letter-spacing: .2rem;}}
+    &.-ls-2_s{@include max(768){ letter-spacing: 0rem;}}
     &.-ls-3_s{@include max(768){ letter-spacing: .3rem;}}
     &.-ls-4_s{@include max(768){ letter-spacing: .4rem;}}
     &.-ls-5_s{@include max(768){ letter-spacing: .5rem;}}
@@ -180,8 +183,8 @@ html {
 }
 h1,h2,h3,h4,h5,h6,p,a,span,label,button{
         &.s-SS{
-            font-size: clamp(.8rem, 1.1vw, 1.2rem);
-            @include min(1200){font-size: clamp(1rem, 2vw, 1.2rem);}
+            font-size: clamp(.8rem, 1.1vw, 1.1rem);
+            @include min(1200){font-size: clamp(1rem, 2vw, 1.1rem);}
             &.-s12{@include max(768){font-size: 1.2rem;}}
         }
         &.s-S{
@@ -189,6 +192,10 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
             @include min(768){font-size: clamp(1rem, 1.2vw, 1.5rem);}
             &.-s10{@include max(768){font-size: 1rem;}}
             &.-s12{@include max(768){font-size: 1.2rem;}}
+
+            &._contact{
+                @include min(768){font-size: clamp(1rem, 1.2vw, 1.3rem);}
+            }
         }
         &.s-M{
             font-size: 1.2rem;
@@ -235,7 +242,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
         // ナビゲーション関係のサイズ
         &.-s-nav{
             &.s-S{@include min(768){font-size: clamp(1rem, 1.2vw, 1.2rem)   !important;}}
-            &.s-M{@include min(768){font-size: clamp(1.2rem, 1.5vw, 1.4rem) !important;}}
+            &.s-M{@include min(768){font-size: clamp(1rem, 1.5vw, 1.4rem) !important;}}
             &.s-L{@include min(768){font-size: clamp(1.6rem, 1.8vw, 1.8rem) !important;}}
         }
 }
