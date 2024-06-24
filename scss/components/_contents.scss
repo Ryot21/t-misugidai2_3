@@ -4,6 +4,17 @@
 	height: auto;
 }
 
+.-min{
+	&_t1{
+		position: absolute;
+		bottom: -3.5px;
+		@include min(768){bottom: -1.5px;}
+	}
+	&_t2{
+
+	}
+}
+
 .c-contents{
 	&-inner{
 		width: 90%;
@@ -325,21 +336,42 @@
 						width: 15%;
 					}
 				}
+				&._p04{// 縦位置のみ
+					top: 88%;
+					@include min(768){
+						top: 65%;
+					}
+				}
 			}
 			// 帯 > テキスト
 			&.-obi-text{
-				top: 80%;
-				left: 74%;
+				top: 50%;
+				left: 80%;
 				transform: translate(-50%, -50%);
 				width: auto;
 				@include min(768){
-					top: 60%;
+					top: 50%;
 					left: 57.5%;
 					transform: translate(-50%, -50%);
 					width: 50%;
 				}
 				@include min(1000){left: 55.5%;}
 				@include min(1800){left: 48.5%;}
+
+				&._pic{
+					@include min(768){}
+				}
+			}
+			// 周辺環境 > 現地までの時間
+			&.-obi-minBox{
+				top: 85%;
+				right: 0%;
+				width: 100%;
+				@include min(768){
+					top: 95%;
+					right: 0;
+					width: 41%;
+				}
 			}
 
 			// 周辺環境 > 目的地までに要する時間
@@ -403,6 +435,7 @@
 					}
 				}
 			}
+
 		}
 	}
 

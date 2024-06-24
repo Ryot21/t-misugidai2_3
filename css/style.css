@@ -185,6 +185,25 @@ h1.-left, h2.-left, h3.-left, h4.-left, h5.-left, h6.-left, p.-left, a.-left, sp
 h1.-center, h2.-center, h3.-center, h4.-center, h5.-center, h6.-center, p.-center, a.-center, span.-center, label.-center, button.-center {
   text-align: center;
 }
+h1.-top, h2.-top, h3.-top, h4.-top, h5.-top, h6.-top, p.-top, a.-top, span.-top, label.-top, button.-top {
+  vertical-align: top;
+}
+h1.-bottom, h2.-bottom, h3.-bottom, h4.-bottom, h5.-bottom, h6.-bottom, p.-bottom, a.-bottom, span.-bottom, label.-bottom, button.-bottom {
+  vertical-align: bottom;
+}
+h1.-middle, h2.-middle, h3.-middle, h4.-middle, h5.-middle, h6.-middle, p.-middle, a.-middle, span.-middle, label.-middle, button.-middle {
+  vertical-align: middle;
+}
+h1.-btm_Box, h2.-btm_Box, h3.-btm_Box, h4.-btm_Box, h5.-btm_Box, h6.-btm_Box, p.-btm_Box, a.-btm_Box, span.-btm_Box, label.-btm_Box, button.-btm_Box {
+  display: flex;
+  justify-content: center;
+  line-height: 0;
+  padding-top: 20px;
+  vertical-align: bottom;
+}
+h1.-btm_Box span, h2.-btm_Box span, h3.-btm_Box span, h4.-btm_Box span, h5.-btm_Box span, h6.-btm_Box span, p.-btm_Box span, a.-btm_Box span, span.-btm_Box span, label.-btm_Box span, button.-btm_Box span {
+  display: block;
+}
 h1.-lh-n, h2.-lh-n, h3.-lh-n, h4.-lh-n, h5.-lh-n, h6.-lh-n, p.-lh-n, a.-lh-n, span.-lh-n, label.-lh-n, button.-lh-n {
   line-height: normal;
 }
@@ -236,7 +255,7 @@ h1.-lh-4, h2.-lh-4, h3.-lh-4, h4.-lh-4, h5.-lh-4, h6.-lh-4, p.-lh-4, a.-lh-4, sp
 }
 @media (768px >= width) {
   h1.-lh-2_s, h2.-lh-2_s, h3.-lh-2_s, h4.-lh-2_s, h5.-lh-2_s, h6.-lh-2_s, p.-lh-2_s, a.-lh-2_s, span.-lh-2_s, label.-lh-2_s, button.-lh-2_s {
-    line-height: 0.5;
+    line-height: 2;
   }
 }
 @media (768px >= width) {
@@ -277,7 +296,7 @@ h1.-ls-10, h2.-ls-10, h3.-ls-10, h4.-ls-10, h5.-ls-10, h6.-ls-10, p.-ls-10, a.-l
 }
 @media (768px >= width) {
   h1.-ls-2_s, h2.-ls-2_s, h3.-ls-2_s, h4.-ls-2_s, h5.-ls-2_s, h6.-ls-2_s, p.-ls-2_s, a.-ls-2_s, span.-ls-2_s, label.-ls-2_s, button.-ls-2_s {
-    letter-spacing: 0rem;
+    letter-spacing: 0.2rem;
   }
 }
 @media (768px >= width) {
@@ -1353,6 +1372,12 @@ span.-block {
   }
 }
 
+@media (768px >= width) {
+  .pdt15s {
+    padding-top: 15% !important;
+  }
+}
+
 @media (width >= 768px) {
   .pdt0 {
     padding-top: 0 !important;
@@ -1485,6 +1510,12 @@ span.-block {
 @media (768px >= width) {
   .pdb10s {
     padding-bottom: 10% !important;
+  }
+}
+
+@media (768px >= width) {
+  .pdb15s {
+    padding-bottom: 15% !important;
   }
 }
 
@@ -1725,6 +1756,36 @@ span.-block {
 @media (768px >= width) {
   .pdr5s {
     padding-right: 5% !important;
+  }
+}
+
+@media (768px >= width) {
+  .pdr6s {
+    padding-right: 6% !important;
+  }
+}
+
+@media (768px >= width) {
+  .pdr7s {
+    padding-right: 7% !important;
+  }
+}
+
+@media (768px >= width) {
+  .pdr8s {
+    padding-right: 8% !important;
+  }
+}
+
+@media (768px >= width) {
+  .pdr9s {
+    padding-right: 9% !important;
+  }
+}
+
+@media (768px >= width) {
+  .pdr10s {
+    padding-right: 10% !important;
   }
 }
 
@@ -4432,6 +4493,15 @@ button.swiper-pagination-bullet {
   height: auto;
 }
 
+.-min_t1 {
+  position: absolute;
+  bottom: -3.5px;
+}
+@media (width >= 768px) {
+  .-min_t1 {
+    bottom: -1.5px;
+  }
+}
 .c-contents-inner {
   width: 90%;
   margin: auto;
@@ -4794,15 +4864,23 @@ button.swiper-pagination-bullet {
     width: 15%;
   }
 }
+.c-contents.-imgBg .c-contentsBox.-tatePic._p04 {
+  top: 88%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-tatePic._p04 {
+    top: 65%;
+  }
+}
 .c-contents.-imgBg .c-contentsBox.-obi-text {
-  top: 80%;
-  left: 74%;
+  top: 50%;
+  left: 80%;
   transform: translate(-50%, -50%);
   width: auto;
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-obi-text {
-    top: 60%;
+    top: 50%;
     left: 57.5%;
     transform: translate(-50%, -50%);
     width: 50%;
@@ -4816,6 +4894,18 @@ button.swiper-pagination-bullet {
 @media (width >= 1800px) {
   .c-contents.-imgBg .c-contentsBox.-obi-text {
     left: 48.5%;
+  }
+}
+.c-contents.-imgBg .c-contentsBox.-obi-minBox {
+  top: 85%;
+  right: 0%;
+  width: 100%;
+}
+@media (width >= 768px) {
+  .c-contents.-imgBg .c-contentsBox.-obi-minBox {
+    top: 95%;
+    right: 0;
+    width: 41%;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-min {
