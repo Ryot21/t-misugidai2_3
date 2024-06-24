@@ -345,22 +345,20 @@
 			}
 			// 帯 > テキスト
 			&.-obi-text{
-				top: 50%;
-				left: 80%;
+				top: 80%;
+				left: 69%;
 				transform: translate(-50%, -50%);
-				width: auto;
+				width: 50%;
 				@include min(768){
 					top: 50%;
 					left: 57.5%;
-					transform: translate(-50%, -50%);
-					width: 50%;
 				}
 				@include min(1000){left: 55.5%;}
 				@include min(1800){left: 48.5%;}
 
-				&._pic{
-					@include min(768){}
-				}
+				// &._pic{
+				// 	@include min(768){}
+				// }
 			}
 			// 周辺環境 > 現地までの時間
 			&.-obi-minBox{
@@ -388,7 +386,7 @@
 					right: 0;
 					left: auto;
 					@include min(768){
-						top: 100%;
+						top: 98%;
 					}
 				}
 				&.-item03{// 飯能河原
