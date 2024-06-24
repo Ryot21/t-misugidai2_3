@@ -141,6 +141,8 @@
 .pdt8s  {@include max(768){padding-top: 8% !important;}}
 .pdt9s  {@include max(768){padding-top: 9% !important;}}
 .pdt10s {@include max(768){padding-top:10% !important;}}
+.pdt15s {@include max(768){padding-top:15% !important;}}
+
 
 // 768px以上
 .pdt0  {@include min(768){padding-top: 0  !important;}}
@@ -173,6 +175,8 @@
 .pdb8s  {@include max(768){padding-bottom: 8% !important;}}
 .pdb9s  {@include max(768){padding-bottom: 9% !important;}}
 .pdb10s {@include max(768){padding-bottom:10% !important;}}
+.pdb15s {@include max(768){padding-bottom:15% !important;}}
+
 
 // 768px以上
 .pdb0  {@include min(768){padding-bottom: 0  !important;}}
@@ -232,6 +236,11 @@
 .pdr3s  {@include max(768){padding-right: 3% !important;}}
 .pdr4s  {@include max(768){padding-right: 4% !important;}}
 .pdr5s  {@include max(768){padding-right: 5% !important;}}
+.pdr6s  {@include max(768){padding-right: 6% !important;}}
+.pdr7s  {@include max(768){padding-right: 7% !important;}}
+.pdr8s  {@include max(768){padding-right: 8% !important;}}
+.pdr9s  {@include max(768){padding-right: 9% !important;}}
+.pdr10s  {@include max(768){padding-right: 10% !important;}}
 
 // 768px以上
 .pdr0  {@include min(768){padding-right: 0  !important;}}
